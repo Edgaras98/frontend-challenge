@@ -2,7 +2,6 @@
 <template>
  <div class="about">
    <Navigation text='Home' text2='Create blog' />
-     <h1></h1>
 </div>
 </template>
 
@@ -16,6 +15,6 @@ export default {
   }
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
 
 </style>
