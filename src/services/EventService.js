@@ -19,7 +19,7 @@ export default {
     editBlog(id, form){
         return apiClient.put('/posts/' + id, form)
     },
-    postBlog(id, form){
-        return apiClient.post('/posts/' + id, form)
+    postBlog(form){
+        return apiClient.post('/posts', form)
     }
 }

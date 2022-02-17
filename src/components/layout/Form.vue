@@ -1,6 +1,6 @@
 <template>
   <div class="form">
-    <b-form @submit="$emit('edit-blog', form)" @reset="formReset">
+    <b-form @submit="$emit('form-submit', form)" @reset="formReset">
 
         <b-form-input
          class="form-input"
@@ -15,6 +15,7 @@
          :placeholder="bodyPlaceholder"
          required
          />
+
         <div class="form-buttons">
         <b-button type="submit" variant="primary">Submit</b-button>
         <b-button type="reset" variant="danger">Reset</b-button>
@@ -31,7 +32,6 @@
     props:{
       titlePlaceholder: String,
       bodyPlaceholder: String,
-      
     },
 
     data() {
@@ -49,7 +49,7 @@
         event.preventDefault()
         this.form.title = ''
         this.form.body = ''
-      }
+      },
     }
   }
 </script>
